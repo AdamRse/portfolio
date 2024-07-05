@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 *{
     margin: 0;
@@ -96,13 +97,56 @@ header #planetMars{
     color: #fff;
     min-height: 100vh;
 }
+#container .intro .quote{
+    font-style: italic;
+}
 #container .intro .sectionLeft{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-#container .introSkills{
-
+#container .intro .sectionLeft h2{
+    margin-top: 5rem;
+}
+#container .intro .introSkills .skillBox{
+    display: flex;
+    transition: all .3s ease-out;
+    justify-content: start;
+}
+#container .intro .introSkills .skillBox:hover{
+    color: var(--marsLight);
+    margin-left: 1rem;
+    .list{
+        width: 70%;
+    }
+    .title{
+        margin-left: 1rem;
+        font-weight: bold;
+    }
+    .ic{
+        margin-left: 1rem;
+        transform: rotate(90deg);
+        font-weight: bold;
+    }
+}
+#container .intro .introSkills .skillBox .ic{
+    padding: 1rem 0;
+    text-align: center;
+    transition: all .3s ease-out;
+}
+#container .intro .introSkills .skillBox .title{
+    padding: 1rem;
+    transition: all .3s ease-out;
+}
+#container .intro .introSkills .skillBox .list{
+    width: 0px;
+    overflow: hidden;
+    transition: all .3s ease-out;
+}
+#container .intro .introSkills .skillBox .list img{
+    max-width: 3rem;
+    max-height: 3rem;
+    margin: 1rem;
 }
 #container .skills{
     color: var(--marsLight);
@@ -203,7 +247,10 @@ section .bg{
     float: right;
     mix-blend-mode: exclusion;
     filter: invert(1);
-    padding-top: 4rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 .topMenu a{
     display: flex;
@@ -214,11 +261,23 @@ section .bg{
     font-size: 1.5rem;
     font-weight: bolder;
     cursor: pointer;
+    margin: 0 0 0 2rem;
+
 }
 .topMenu img{
     max-height: 4rem;
 }
 
+
+.textColorTheme{
+    color: var(--marsLight);
+}
+.quotes{
+    color: var(--marsLight);
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    font-weight: bold;
+}
 
 
 .typing{
