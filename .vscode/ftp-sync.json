@@ -1,0 +1,28 @@
+{
+    "name": "adam-serv-portfolio",
+    "remotePath": "/var/www/developpement/apps/portfolio/",
+    "host": "5.39.77.77",
+    "username": "developpeur",
+    "password": "crepuscule1@dev",
+    "port": 22,
+    "secure": true,
+    "protocol": "sftp",
+    "uploadOnSave": true,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": "/home/garage404/.ssh/serv-adam",
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ""
+        ],
+        "path": ""
+    }
+}

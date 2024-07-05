@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css?piueprg">
+    <title>Portfolio Adam</title>
+</head>
+<body onload="document.querySelector('#loader').style.display = 'none'; loaded()">
+    <video id="videoBg" loop autoplay muted onload="alert('load')">
+        <!-- <source src="video/stars.webm" type="video/webm"> -->
+        <source src="video/bgSpace.webm" type="video/webm">
+    </video>
+    <div id="loader">
+        <div>
+            Chargement en cours
+        </div>
+    </div>
+    <div id="container">
+        <div class="landing">
+            <section class="intro">
+                <header>
+                    <div>
+                        <h2><span class="typing" data-wait="1000">Restez curieux !</span></h2>
+                        <div style="clear: both;"></div>
+                        <div class="topMenu">
+                            <a href="https://cv.adam.rousselle.me" target="_blank">
+                                <img src="/img/cv.png" />
+                                CV
+                            </a>
+                        </div>
+                    </div>
+        
+                    <img id="planetMars" src="img/planetMarsMin.png"/>
+                </header>
+                <div class="sectionLeft">
+                    <div>
+                        <h2><span class="typing" data-wait="3000">Adam Rousselle</span></h2>
+                        <p>
+                            <span class="typing" data-wait="5000">Développeur web</span>
+                        </p>
+                        <p>
+                            Dans la vie rien n'est à craindre, tout est à comprendre.
+                            <br/>
+                            Marie Curie
+                        </p>
+                    </div>
+                    <div class="introSkills">
+                        Ici mes Skills
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="separator">
+            <img class="line1" src="img/bgSkills1.png"/>
+            <h2 class="title">Skills</h2>
+        </div>
+        <section class="skills">
+            <img src="/img/sky.jpg" class="bg">
+            <div class="technos">
+                <img src="/img/logo/php.png" />
+                <img src="/img/logo/symfony.png" />
+                <img src="/img/logo/js.png" />
+                <img src="/img/logo/ts.png" />
+                <img src="/img/logo/node.webp" />
+                <img src="/img/logo/css.png" />
+                <img src="/img/logo/html5.png" />
+                <img src="/img/logo/react.png" />
+                <img src="/img/logo/sass.png" />
+                <img src="/img/logo/tailwind.png" />
+                <img src="/img/logo/runcloud.png" />
+                <img src="/img/logo/unix.png" />
+                <img src="/img/logo/mysql.png" />
+                <img src="/img/logo/apache.png" />
+                <img src="/img/logo/bash.png" />
+                <img src="/img/logo/git.png" />
+                <img src="/img/logo/rgpd.png" />
+                <img src="/img/voyager2-flip.png" class="voyager2Intro" />
+            </div>
+            <div class="bandeau">
+                <p>Je développe des projets web depuis 2016. J'ai de solides bases sur les frameworks populaires et en code natif</p>
+            </div>
+            <div class="projects">
+                <div class="projectCard">
+                    <a href="https://pokemon.adam.rousselle.me" target="_blank">
+                        <img src="/img/project1.png" class="thumbnail"/>
+                        <div class="projectTechnos">
+                            <img src="/img/logo/php.png" />
+                            <img src="/img/logo/tailwind.png" />
+                            <img src="/img/logo/git.png" />
+                            <img src="/img/logo/js.png" />
+                        </div>
+                        <div class="description">
+                            Application de jeu de combat RPG
+                        </div>
+                    </a>
+                </div>
+                <div class="projectCard">
+                    <a href="https://react-combat404.vercel.app" target="_blank">
+                        <img src="/img/project2.png" class="thumbnail"/>
+                        <div class="projectTechnos">
+                            <img src="/img/logo/react.png" />
+                            <img src="/img/logo/tailwind.png" />
+                        </div>
+                        <div class="description">
+                            Jeu de combat RPG au tour par tour basé sur l'univers de pokémon
+                        </div>
+                    </a>
+                </div>
+                <div class="projectCard">
+                    <a href="https://react-meteo.vercel.app/" target="_blank">
+                        <img src="/img/project3.png" class="thumbnail"/>
+                        <div class="projectTechnos">
+                            <img src="/img/logo/react.png" />
+                            <img src="/img/logo/bs.png" />
+                        </div>
+                        <div class="description">
+                            Application météo multi-lingue, basé sur l'API openweather.com
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
+<!-- idées de portfolio
+Font dégueulasse (jokerman) en front qui change en font jolie avec une animation cool style glitch
+
+-->

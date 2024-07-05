@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: inherit;
+}
+p{
+    margin-bottom: 2rem;
+}
+body{
+    min-height: 100%;
+    width: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: "Ysabeau SC", sans-serif;
+    font-size: 1.5rem;
+    user-select: none;
+
+    /* --marsLight: #fb7b43;
+    --marsMight50: rgba(251, 123, 67, 0.5); */
+    --marsLight: #c9854a;
+    --marsMight50: rgba(201, 133, 74, 0.5);
+    --marsLightOpose: #4a5dc9;
+}
+header{
+    color: #000;
+    text-align: right;
+    padding: 2rem 0;
+}
+#conteneur .landing{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+header div h2{
+    display: inline;
+    filter: invert(1);
+    mix-blend-mode: exclusion;
+    font-size: 3rem;
+}
+header #planetMars{
+    animation: roll 350s linear infinite;
+    position: absolute;
+    z-index: -1;
+    left: 60%;
+    bottom: -50%;
+    height: 100vw;
+    filter: grayscale(100%) ;
+    transition: filter 1s linear;
+}
+#videoBg{
+    min-height: 100vh;
+    min-width: 100%;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    opacity: 1;
+    filter: grayscale(100%) ;
+    transition: filter 1s linear;
+    /* filter: grayscale(100%) blur(5px); */
+
+    
+}
+#loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #cdf;
+    z-index: 100;
+    text-align: center;
+}
+#loader div{
+    display: inline-block;
+    max-width: 35rem;
+}
+#container section{
+    padding: 0 5rem;
+}
+#container .intro{
+    color: #fff;
+    min-height: 100vh;
+}
+#container .intro .sectionLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#container .introSkills{
+
+}
+#container .skills{
+    color: var(--marsLight);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#container .skills .technos{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    position: relative;
+}
+#container .skills .technos img{
+    height: 30%;
+    filter: grayscale(1);
+    padding-bottom: 1rem;
+}
+#container .skills .technos img:hover{
+    filter: drop-shadow(0 0 2px var(--marsLight));
+    border-bottom: 2px solid var(--marsLight);
+}
+#container .skills .technos .voyager2Intro{
+    height: 100%;
+    filter: none;
+    animation: rock 2s ease-in-out infinite;
+    padding: 0;
+}
+#container .skills .technos .voyager2Intro:hover{
+    filter: none;
+    border: none;
+}
+#container .skills .bandeau{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    border-bottom: 1px solid var(--marsLight);
+    font-size: 2rem;
+}
+#container .skills .projects{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#container .skills .projects .projectCard{
+    width: 30%;
+}
+#container .skills .projects .projectCard .thumbnail{
+    width: 100%;
+    max-height: 50vh;
+}
+#container .skills .projects .projectCard .projectTechnos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container .skills .projects .projectCard .projectTechnos img{
+    max-width: 10%;
+    margin: 1rem;
+    filter: grayscale(1);
+}
+
+#container .skills .projects .projectCard .description{
+
+}
+.separator{
+    margin-top: 2%;
+    font-size: 0;
+    position: relative;
+    border-bottom: 2px solid var(--marsLightOpose);
+}
+.separator .line1{
+    width: 200%;
+}
+.separator .title{
+    mix-blend-mode: exclusion;
+    font-size: 5rem;
+    line-height: 5rem;
+    z-index: 1;
+    margin: -5rem 0 0 5rem;
+}
+
+section{
+    position: relative;
+}
+section .bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+}
+.topMenu{
+    float: right;
+    mix-blend-mode: exclusion;
+    filter: invert(1);
+    padding-top: 4rem;
+}
+.topMenu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.topMenu img{
+    max-height: 4rem;
+}
+
+
+
+.typing{
+    opacity: 0;
+    position: fixed;
+}
+@media (orientation: portrait) {
+    section .bg{
+        width: inherit;
+        height: 100%;
+    }
+  }
+  @keyframes roll{
+      from{
+          transform: rotate(-180deg);
+      }
+      to{
+          transform: rotate(179deg);
+      }
+  }
+  @keyframes rock{
+      0%{
+          transform: rotate(-15deg);
+      }
+      50%{
+          transform: rotate(25deg);
+      }
+      100%{
+            transform: rotate(-15deg);
+      }
+  }
